@@ -1,0 +1,42 @@
+body{
+    background-color: honeydew;
+    text-align: center;
+    margin: auto;
+    padding: auto;
+}
+
+a{
+    transition: 0.5s ease;;
+}
+
+a:hover{
+    color: greenyellow;
+    text-decoration: none;
+}
+
+.interactive-button{
+    background-color: rgba(0,0, 255, 0.5);
+    padding: 10px;
+    margin: 10px;
+    display :inline-block;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.interactive-button:active{
+    transform: scale(1.5)
+}
+
+.rotating-image{
+    display: inline-block;
+    animation: rotate 10s linear;
+}
+
+@keyframes rotate{
+    from{
+        transform: rotate(0deg)
+    }
+    to{
+        transform:rotate(360deg)
+    }
+}
